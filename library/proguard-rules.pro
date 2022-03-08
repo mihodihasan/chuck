@@ -1,2 +1,2 @@
--keep class com.readystatesoftware.chuck.internal.data.HttpTransaction { *; }
+-keep class io.github.mihodihasan.chuck.internal.data.HttpTransaction { *; }
 -keep class android.support.v7.widget.SearchView { *; }

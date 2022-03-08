@@ -44,15 +44,15 @@ FAQ
 - Why are retries and redirects not being captured discretely?
 - Why are my encoded request/response bodies not appearing as plain text?
 
-Please refer to [this section of the OkHttp wiki](https://github.com/square/okhttp/wiki/Interceptors#choosing-between-application-and-network-interceptors). You can choose to use Chuck as either an application or network interceptor, depending on your requirements.
+Please refer to [this section of the OkHttp wiki](https://io.github.com/square/okhttp/wiki/Interceptors#choosing-between-application-and-network-interceptors). You can choose to use Chuck as either an application or network interceptor, depending on your requirements.
 
 Acknowledgements
 ----------------
 
 Chuck uses the following open source libraries:
 
-- [OkHttp](https://github.com/square/okhttp) - Copyright Square, Inc.
-- [Gson](https://github.com/google/gson) - Copyright Google Inc.
+- [OkHttp](https://io.github.com/square/okhttp) - Copyright Square, Inc.
+- [Gson](https://io.github.com/google/gson) - Copyright Google Inc.
 - [Cupboard](https://bitbucket.org/littlerobots/cupboard) - Copyright Little Robots.
 
 License
