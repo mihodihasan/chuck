@@ -7,12 +7,12 @@ def isReleaseBuild() {
 
 def getReleaseRepositoryUrl() {
   return hasProperty('RELEASE_REPOSITORY_URL') ? RELEASE_REPOSITORY_URL
-      : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+      : "https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/"
 }
 
 def getSnapshotRepositoryUrl() {
   return hasProperty('SNAPSHOT_REPOSITORY_URL') ? SNAPSHOT_REPOSITORY_URL
-      : "https://oss.sonatype.org/content/repositories/snapshots/"
+      : "https://s01.oss.sonatype.org/content/repositories/snapshots/"
 }
 
 def getRepositoryUsername() {
@@ -98,6 +98,11 @@ afterEvaluate { project ->
         allprojects {
             tasks.withType(Javadoc) {
                 options.addStringOption('Xdoclint:none', '-quiet')
+            }
+            plugins.withId("com.vanniktech.maven.publish") {
+                mavenPublish {
+                    sonatypeHost = "S01"
+                }
             }
         }
     }

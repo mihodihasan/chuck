@@ -16,5 +16,28 @@ dependencies {
     api 'nl.qbusict:cupboard:2.2.0'
     api 'com.google.android.material:material:1.0.0'
 }
+ext {
+    PUBLISH_GROUP_ID = 'io.github.mihodihasan.chuck'
+    PUBLISH_VERSION = '1.1.2'
+    PUBLISH_ARTIFACT_ID = 'chuck'
+    PUBLISH_DESCRIPTION = 'HTTP Activity Logger'
+    PUBLISH_URL = 'https://github.com/mihodihasan/chuck'
+    PUBLISH_LICENSE_NAME = 'Apache License'
+    PUBLISH_LICENSE_URL =
+            'https://github.com/mihodihasan/chuck/blob/master/LICENSE.txt'
+    PUBLISH_DEVELOPER_ID = 'mihodihasan'
+    PUBLISH_DEVELOPER_NAME = 'Mihodi Hasan Lushan'
+    PUBLISH_DEVELOPER_EMAIL = 'mihodihasan@gmail.com'
+    PUBLISH_SCM_CONNECTION =
+            'scm:git:github.com/mihodihasan/chuck.git'
+    PUBLISH_SCM_DEVELOPER_CONNECTION =
+            'scm:git:ssh://github.com/mihodihasan/chuck.git'
+    PUBLISH_SCM_URL =
+            'https://github.com/mihodihasan/chuck/tree/master'
 
-//apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
+}
+//apply plugin: 'com.vanniktech.maven.publish'
+//apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
+// Provide your own coordinates here
+
+apply from: "${rootProject.projectDir}/scripts/publish-module.gradle"
