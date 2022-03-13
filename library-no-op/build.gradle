@@ -15,7 +15,7 @@ dependencies {
 
 ext {
     PUBLISH_GROUP_ID = 'io.github.mihodihasan.chuck'
-    PUBLISH_VERSION = '1.1.2'
+    PUBLISH_VERSION = '1.1.3'
     PUBLISH_ARTIFACT_ID = 'chuck'
     PUBLISH_DESCRIPTION = 'HTTP Activity Logger'
     PUBLISH_URL = 'https://github.com/mihodihasan/chuck'
